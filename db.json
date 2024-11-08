@@ -1,19 +1,99 @@
 {
-  "posts": [
+  "books": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "id": "1",
+      "bookTitle": "The Hunger Games",
+      "bookAuthor": "Suzanne Collins"
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id": "2",
+      "bookTitle": "Harry Potter & The Order of The Pheonix",
+      "bookAuthor": "J.K. Rowling"
+    },
+    {
+      "id": "eeb1",
+      "bookTitle": "The Little that Could",
+      "authorTitle": "Your Author Here..."
+    },
+    {
+      "id": "4b7d",
+      "bookTitle": "",
+      "authorTitle": "Your Author Here..."
+    },
+    {
+      "id": "0506",
+      "bookTitle": "test",
+      "authorName": "Your Author Here..."
+    },
+    {
+      "id": "ea40",
+      "bookTitle": "test",
+      "authorName": "Your Author Here..."
+    },
+    {
+      "id": "bef7",
+      "bookTitle": "My Book",
+      "authorName": "Your Author Here..."
+    },
+    {
+      "id": "00eb",
+      "bookTitle": "My Book",
+      "authorName": "Your Author Here..."
+    },
+    {
+      "id": "aad1",
+      "bookTitle": "My Book",
+      "authorName": "Your Author Here..."
+    },
+    {
+      "id": "a17a",
+      "bookTitle": "My Book",
+      "authorName": "Your Author Here..."
+    },
+    {
+      "id": "1e99",
+      "bookTitle": "My Book",
+      "authorName": "Your Author Here..."
+    },
+    {
+      "id": "3181",
+      "bookTitle": "My Book",
+      "authorName": "Your Author Here..."
+    },
+    {
+      "id": "70b2",
+      "bookTitle": "My Book",
+      "authorName": "Your Author Here..."
+    },
+    {
+      "id": "880e",
+      "bookTitle": "My Book",
+      "authorName": "Your Author Here..."
+    },
+    {
+      "id": "deff",
+      "bookTitle": "My Book",
+      "authorName": "Your Author Here..."
+    },
+    {
+      "id": "a4d3",
+      "bookTitle": "My Book",
+      "authorName": "Your Author Here..."
+    },
+    {
+      "id": "19b5",
+      "bookTitle": "My Book",
+      "authorName": "Your Author Here..."
+    },
+    {
+      "id": "c460",
+      "bookTitle": "My Book",
+      "authorName": "Your Author Here..."
+    },
+    {
+      "id": "482f",
+      "bookTitle": "My Book",
+      "authorName": "Your Author Here..."
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
