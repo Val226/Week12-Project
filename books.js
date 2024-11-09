@@ -17,43 +17,75 @@ let books = [];
 
 //GET Request
 async function getData(bookTitleVariable) {
-function addBooks() {
+  async function addBooks() {  // Make addBooks async
 
-console.log("Getting data...");
+    console.log("Getting data...");
 
-console.log("Books array before api call:", books);
+    console.log("Books array before API call:", books);
 
-  try {
-    const response = await fetch(API_ENDPOINT,{
-      method: "POST",
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(
-        {
-          bookTitle: bookTitleVariable,
-          authorName: "Your Author Here..."
-        }
-      )
-    });
-    if (!response.ok) {
-      throw new Error(`Response status: ${response.status}`);
+    try {
+      const response = await fetch(API_ENDPOINT, {
+        method: "POST",
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(
+          {
+            bookTitle: bookTitleVariable,
+          }
+        )
+      });
+      if (!response.ok) {
+        throw new Error(`Response status: ${response.status}`);
+      }
+
+      const json = await response.json();
+      console.log("JSON FROM API:", json);
+      books = json;
+
+      console.log("These are my books!", books);
+
+    } catch (error) {
+      console.error("Error fetching data:", error);
     }
-
-    const json = await response.json();
-    console.log("JSON FROM API:",json);
-books =json;
-
-console.log("These are my books!",books);
-
-
-  } catch (error) {
-    console.error("Oh No!!! AN eRROR!!!!",error.message);
   }
+
 }
+async function getData(authorNameVariable) {
+  async function addBooks() {  // Make addBooks async
 
+    console.log("Getting data...");
 
-getData("My Book") //Calling on the getData method to fetch books via the db.json API
+    console.log("Books array before API call:", books);
+
+    try {
+      const response = await fetch(API_ENDPOINT, {
+        method: "POST",
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(
+          {
+            authorName: authorNameVariable,
+          }
+        )
+      });
+      if (!response.ok) {
+        throw new Error(`Response status: ${response.status}`);
+      }
+
+      const json = await response.json();
+      console.log("JSON FROM API:", json);
+      books = json;
+
+      console.log("These are my books!", books);
+
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
+  }
+
+}
 
 
     // I need variables to hold the values of the form
@@ -76,6 +108,7 @@ getData("My Book") //Calling on the getData method to fetch books via the db.jso
 
     document.getElementById('tBody').appendChild(newTableRow);
 })
+
 
 // Delete Row
 /*
