@@ -3,27 +3,22 @@
     {
       "id": "1",
       "bookTitle": "The Hunger Games",
-      "bookAuthor": "Suzanne Collins"
+      "authorName": "Suzanne Collins"
     },
     {
       "id": "2",
       "bookTitle": "Harry Potter & The Order of The Pheonix",
-      "bookAuthor": "J.K. Rowling"
+      "authorName": "J.K. Rowling"
     },
     {
       "id": "3",
       "bookTitle": "Pride & Predjudice",
-      "authorTitle": "Jane Austen"
+      "authorName": "Jane Austen"
     },
     {
       "id": "4",
       "bookTitle": "To Kill A Mockingbird",
-      "authorTitle": "Harper Lee"
-    },
-    {
-      "id": "5",
-      "bookTitle": "The Book Thief",
-      "authorName": "Markus Zusak"
+      "authorName": "Harper Lee"
     },
     {
       "id": "6",
@@ -56,18 +51,13 @@
       "authorName": "John Green"
     },
     {
-      "id": "12",
-      "bookTitle": "1984",
-      "authorName": "George Owell"
-    },
-    {
       "id": "13",
       "bookTitle": "The Great Gatsby",
       "authorName": "F. Scott Fitzgerald"
     },
     {
       "id": "14",
-      "bookTitle": "Harry Potter & The Socerer's Stone",
+      "bookTitle": "Harry Potter & The Sorcerer's Stone",
       "authorName": "J.K Rowling"
     },
     {
@@ -75,3 +65,5 @@
       "bookTitle": "Fahrenheit 451",
       "authorName": "Ray Bradbury"
     }
+  ]
+}
