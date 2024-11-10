@@ -55,25 +55,5 @@
       "bookTitle": "The Fault in our Stars",
       "authorName": "John Green"
     },
-    {
-      "id": "12",
-      "bookTitle": "1984",
-      "authorName": "George Owell"
-    },
-    {
-      "id": "13",
-      "bookTitle": "The Great Gatsby",
-      "authorName": "F. Scott Fitzgerald"
-    },
-    {
-      "id": "14",
-      "bookTitle": "Harry Potter & The Socerer's Stone",
-      "authorName": "J.K Rowling"
-    },
-    {
-      "id": "15",
-      "bookTitle": "Fahrenheit 451",
-      "authorName": "Ray Bradbury"
-    }
   ]
 }

@@ -1,5 +1,41 @@
 * {
-  
+  font-family: "Rock Salt", cursive;
+  color: #ab8752;
+}
+
+html {
+  font-family: "helvetica neue", helvetica, arial, sans-serif;
+}
+
+thead th,
+tfoot th {
+  font-family: "Rock Salt", cursive;
+}
+
+th {
+  letter-spacing: 2px;
+ }
+
+td {
+  letter-spacing: 1px;
+  color: #ab8752;
+}
+
+tbody td {
+  text-align: center;
+  color: #ab8752;
+}
+
+tfoot th {
+  text-align: right;
+}
+
+#title {
+  color: #ab8752;
+}
+
+#author {
+  color: #ab8752;
 }
 
 h2 {
@@ -26,21 +62,5 @@ div.table {
   text-align: center;
   border-collapse: collapse;
   border: solid navy; 
+  color: #ab8752;
 }
-
-table tr:nth-child(even) {
-  background-color: palegoldenrod;
-}
-
-.form {
-
-}
-
-#add {
-
-}
-
-.deleteBtn {
-
-}
-

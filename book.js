@@ -3,6 +3,7 @@ console.log("Starting book app...");
 const myButton = document.getElementById('add');
 const API_ENDPOINT = "http://localhost:3000/books";
 
+// Add event listener for the "Add" button
 myButton.addEventListener('click', async (event) => {
   event.preventDefault();
 
@@ -35,11 +36,11 @@ async function displayBooks() {
     authorNameNode.innerHTML = book.authorName;
     newTableRow.appendChild(authorNameNode);
 
-    // Add delete button cell
+    // Add delete button cell (without deleting from API)
     let deleteButtonNode = document.createElement('td');
     let deleteButton = document.createElement('button');
     deleteButton.innerHTML = "Delete";
-    deleteButton.onclick = () => deleteBook(book.id); // Attach delete function
+    deleteButton.onclick = () => removeBookFromDisplay(book.id, newTableRow); // Remove from UI only, no API interaction
     deleteButtonNode.appendChild(deleteButton);
     newTableRow.appendChild(deleteButtonNode);
 
@@ -84,22 +85,10 @@ async function getBooks() {
   }
 }
 
-// Function to delete a book (Delete)
-async function deleteBook(bookId) {
-  try {
-    const response = await fetch(`${API_ENDPOINT}/${bookId}`, {
-      method: "DELETE",
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    });
-    if (!response.ok) {
-      throw new Error(`Failed to delete book. Status: ${response.status}`);
-    }
-    displayBooks(); // Refresh the displayed list after deletion
-  } catch (error) {
-    console.error("Error deleting book:", error);
-  }
+// Function to remove a book from the displayed list (without deleting from the API)
+function removeBookFromDisplay(bookId, rowElement) {
+  // Remove the row from the table
+  rowElement.remove();
 }
 
 // Load and display books on page load
